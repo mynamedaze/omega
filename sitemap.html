@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/assets/templates/omega-template/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/templates/omega-template/css/jquery.fancybox.min.css" />
+  <meta name="description" content="Спортинвентарь." />
+  <meta name="keywords" content="" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+  <link rel="author" href="/humans.txt" />
+  <title>Спортинвентарь</title>
+  <script src="/assets/templates/omega-template/js/jquery-3.2.1.min.js"></script>
+  <script src="/assets/templates/omega-template/js/jquery.inputmask.bundle.js"></script>
+  <script src="/assets/templates/omega-template/js/owl.carousel.min.js"></script>
+  <script src="/assets/templates/omega-template/js/parallax.min.js"></script>
+  <script src="/assets/templates/omega-template/js/jquery.fancybox.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__contact">
+        <a href="tel:+79189940001" class="page-header__phone">+7 (918) 994-00-01</a>
+        <address class="page-header__address">г. Краснодар, ул. Шоссейная, 21</address>
+      </div>
+      <a href="#" class="page-header__logo-link">
+        <img src="/assets/templates/omega-template/img/logo.png" alt="Omega Active Sport logo"
+          class="page-header__logo">
+      </a>
+      <div class="page-header__callback-wrapper">
+        <div class="page-header__callback-field">
+          <button class="page-header__callback-btn  btnflip  callback-btn">
+            <span class="btnflip-item  btnflip__front">Обратный звонок</span>
+            <span class="btnflip-item  btnflip__center"></span>
+            <span class="btnflip-item  btnflip__back">Обратный звонок</span>
+          </button>
+        </div>
+      </div>
+      <div class="page-header__burger-field">
+        <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="55" height="55"
+          onclick="this.classList.toggle('active')">
+          <path class="line top"
+            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path class="line bottom"
+            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+      </div>
+      <nav class="page-header__nav">
+        <div class="page-header__nav-wrapper">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Главная</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Каталог</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Подобрать мячи</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Отзывы</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="sitemap">
+      <div class="sitemap__wrapper">
+        <h2 class="sitemap__title">Карта сайта</h2>
+        <ul class="sitemap__list">
+          <li class="sitemap__item">
+            <a href="#" class="sitemap__item-link">Мячи</a>
+          </li>
+          <li class="sitemap__item">
+            <a href="#" class="sitemap__item-link">Мячи</a>
+          </li>
+          <li class="sitemap__item">
+            <a href="#" class="sitemap__item-link">Мячи</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+
+  <div class="overlay  overlay--callback" id="popup-callback">
+    <article class="popup-callback">
+      <div class="popup-callback__wrapper">
+        <button class="popup-callback__close-btn"></button>
+        <h3 class="popup-callback__title">Оставьте свои данные и мы подберем вам спортинвентарь</h3>
+        <form class="popup-callback__form" id="popup-callback-form">
+          <div class="popup-callback__form-wrapper">
+            <input type="text" class="popup-callback__input  popup-callback__input--name" name="uname"
+              placeholder="Имя">
+            <input type="tel" class="popup-callback__input  popup-callback__input--phone  common-tel-input" name="uphone" required
+              placeholder="Телефон">
+            <input type="text" class="popup-callback__input  popup-callback__input--page  visually-hidden" name="upage"
+              value="страница мячей">
+            <button type="submit" class="popup-callback__submit  btnflip">
+              <span class="btnflip-item  btnflip__front">Отправить</span>
+              <span class="btnflip-item  btnflip__center"></span>
+              <span class="btnflip-item  btnflip__back">Отправить</span>
+            </button>
+          </div>
+          <input type="checkbox" class="popup-callback__confid-checkbox" id="popup-callback-confid-checkbox" required checked>
+          <label for="popup-callback-confid-checkbox" class="popup-callback__confid-label">Согласен с <a href="#"
+              class="popup-callback__confid-link">политикой конфиденциальности</a></label>
+        </form>
+      </div>
+    </article>
+  </div>
+  <div class="overlay  overlay--success" id="popup-success">
+    <article class="popup-success">
+      <div class="popup-success__wrapper">
+        <button class="popup-success__close-btn"></button>
+        <h3 class="popup-success__title">Спасибо, ваши данные получены</h3>
+        <span class="popup-success__description">В ближайшее время мы свяжемся с вами</span>
+      </div>
+    </article>
+  </div>
+  <script src="/assets/templates/omega-template/js/main.js"></script>
+  <script src="/assets/templates/omega-template/js/balls.js"></script>
+  <script src="/assets/templates/omega-template/js/picturefill.min.js"></script>
+</body>
+
+</html>

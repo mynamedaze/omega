@@ -1,0 +1,111 @@
+.catalogue {
+  @media #{$min-tablet-width} {
+    padding-top: 48px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 27px;
+  }
+}
+.catalogue__wrapper {
+  @include section-width--no-mobile;
+  @include paddings;
+  padding-bottom: 20px;
+}
+.catalogue__nav-list {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  padding-left: 0;
+  border-bottom: 1px solid #898989;
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.8rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2.2rem;
+    justify-content: space-around;
+  }
+}
+.catalogue__nav-item {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    padding-bottom: 19px;
+  }
+  @media #{$min-tablet-width} {
+    padding-bottom: 26px;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 24px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    background-color: #000;
+    @media #{$max-mobile-width} {
+      width: 56px;
+      transform: translateX(-28px);
+    }
+    @media #{$min-tablet-width} {
+      width: 132px;
+      transform: translateX(-66px);
+    }
+  }
+}
+.catalogue__nav-item--active {
+  font-weight: 700;
+  &::after {
+    height: 5px;
+    bottom: -4px;
+  }
+}
+/* */
+.catalogue__more-btn {
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 39px 18px;
+  background-image: url("/assets/templates/omega-template/img/arrow-more.svg");
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  @media #{$max-mobile-width} {
+    font-size: 1.6rem;
+    padding-right: 50px;
+    background-position: right 10px;
+    margin-top: -3px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.8rem;
+    padding-right: 59px;
+    background-position: right 11px;
+    margin-top: 12px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 67px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    height: 6px;
+    @media #{$max-mobile-width} {
+      width: 145px;
+    }
+    @media #{$min-tablet-width} {
+      width: 166px;
+    }
+  }
+}

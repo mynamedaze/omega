@@ -1,0 +1,60 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  @media #{$min-tablet-width} {
+    align-items: flex-end;
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 60px;
+    padding-bottom: 95px;
+  }
+}
+.page-footer__logo-link {
+  @media #{$max-mobile-width} {
+    width: 100%;
+    order: -1;
+    margin-bottom: 32px;
+  }
+}
+.page-footer__logo {
+  width: 152px;
+  height: auto;
+  @media #{$max-mobile-width} {
+    @include centers;
+    display: block;
+  }
+}
+.page-footer__logo--hockey {
+  @media #{$max-mobile-width} {
+    width: 200px;
+  }
+  @media #{$min-tablet-width} {
+    width: 200px;
+  }
+  @media #{$min-desktop-width} {
+    width: 306px;
+  }
+}
+.page-footer__confid-link {
+  text-decoration: underline;
+  @media #{$max-mobile-width} {
+    width: 50%;
+    padding-right: 10px;
+  }
+}
+.page-footer__copyright {
+  @media #{$max-mobile-width} {
+    width: 50%;
+    padding-left: 10px;
+    text-align: right;
+  }
+}

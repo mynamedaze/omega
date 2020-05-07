@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/assets/templates/omega-template/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/templates/omega-template/css/jquery.fancybox.min.css" />
+  <meta name="description" content="Спортинвентарь." />
+  <meta name="keywords" content="" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+  <link rel="author" href="/humans.txt" />
+  <title>Спортинвентарь</title>
+  <script src="/assets/templates/omega-template/js/jquery-3.2.1.min.js"></script>
+  <script src="/assets/templates/omega-template/js/jquery.inputmask.bundle.js"></script>
+  <script src="/assets/templates/omega-template/js/owl.carousel.min.js"></script>
+  <script src="/assets/templates/omega-template/js/parallax.min.js"></script>
+  <script src="/assets/templates/omega-template/js/jquery.fancybox.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__contact">
+        <a href="tel:+79189940001" class="page-header__phone">+7 (918) 994-00-01</a>
+        <address class="page-header__address">г. Краснодар, ул. Шоссейная, 21</address>
+      </div>
+      <a href="#" class="page-header__logo-link">
+        <img src="/assets/templates/omega-template/img/logo.png" alt="Omega Active Sport logo"
+          class="page-header__logo">
+      </a>
+      <div class="page-header__callback-field">
+        <button class="page-header__callback-btn  btnflip  callback-btn">
+          <span class="btnflip-item  btnflip__front">Обратный звонок</span>
+          <span class="btnflip-item  btnflip__center"></span>
+          <span class="btnflip-item  btnflip__back">Обратный звонок</span>
+        </button>
+      </div>
+      <div class="page-header__burger-field">
+        <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="55" height="55"
+          onclick="this.classList.toggle('active')">
+          <path class="line top"
+            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path class="line bottom"
+            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+      </div>
+      <nav class="page-header__nav">
+        <div class="page-header__nav-wrapper">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Главная</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Каталог</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Подобрать мячи</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Отзывы</a></li>
+            <li class="page-header__nav-item"><a href="#" class="page-header__nav-link">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hockey-intro">
+      <div class="hockey-intro__wrapper">
+        <div class="hockey-intro__text-field">
+          <h1 class="hockey-intro__title">Оптовая поставка <b>хоккейной экипировки</b></h1>
+          <span class="hockey-intro__description">Для детей и взрослых, профессионалов и любителей.</span>
+          <div class="hockey-intro__order-btn-field">
+            <button class="hockey-intro__order-btn  btnflip  callback-btn">
+              <span class="btnflip-item  btnflip__front">Заказать</span>
+              <span class="btnflip-item  btnflip__center"></span>
+              <span class="btnflip-item  btnflip__back">Заказать</span>
+            </button>
+          </div>
+        </div>
+        <div class="hockey-intro__bag-field">
+          <div class="hockey-intro__bag">
+          </div>
+          <div class="hockey-intro__klushka"></div>
+          <div class="hockey-intro__shaiba"></div>
+        </div>
+      </div>
+    </section>
+    <section class="catalogue">
+      <div class="catalogue__wrapper">
+        <h2 class="catalogue__tltle visually-hidden">Каталог клюшек</h2>
+        <nav class="catalogue__nav">
+          <ul class="catalogue__nav-list">
+            <li class="catalogue__nav-item  catalogue__nav-item--active">Клюшки</li>
+            <li class="catalogue__nav-item">Защита</li>
+            <li class="catalogue__nav-item">Аксессуары</li>
+          </ul>
+        </nav>
+        <ul class="product-type__list">
+          <li class="product-type__item">
+            <ul class="product-brand__list">
+              <li class="product-brand__item">
+                <h3 class="product-brand__title  product-brand__title--hockey">Клюшки для игрока</h3>
+                <ul class="product-card__list  owl-carousel  owl-theme">
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--hit">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>Project 9</h4>
+                      <div class="product-card__img-field">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__clushki-player.png"
+                          alt="Sherwood клюшки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--best">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>Project 9</h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__clushki-player.png"
+                          alt="Sherwood клюшки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--popular">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>Project 9</h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__clushki-player.png"
+                          alt="Sherwood клюшки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="product-brand__item">
+                <h3 class="product-brand__title  product-brand__title--hockey">Клюшки для вратаря</h3>
+                <ul class="product-card__list  owl-carousel  owl-theme">
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--hit">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>Foamcore GS950
+                      </h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__clushki-keeper.png"
+                          alt="Sherwood клюшки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--best">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>Foamcore GS950
+                      </h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__clushki-keeper.png"
+                          alt="Sherwood клюшки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--popular">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>Foamcore GS950
+                      </h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__clushki-keeper.png"
+                          alt="Sherwood клюшки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="product-brand__item">
+                <h3 class="product-brand__title  product-brand__title--hockey">Крюки</h3>
+                <ul class="product-card__list  owl-carousel  owl-theme">
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--hit">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>T20 ABS</h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__kruki.png"
+                          alt="Sherwood крюки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--best">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>T20 ABS</h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__kruki.png"
+                          alt="Sherwood крюки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__item-wrapper  product-card__item-wrapper--popular">
+                      <h4 class="product-card__item-title  product-card__item-title--hockey">Sher-Wood<br>T20 ABS</h4>
+                      <div class="product-card__img-field  product-card__img-field--hockey">
+                        <img src="/assets/templates/omega-template/img/catalog/hockey/hockey__kruki.png"
+                          alt="Sherwood крюки" class="product-card__item-img">
+                      </div>
+                      <div class="product-card__see-more-field">
+                        <a class="product-card__see-more  btnflip">
+                          <span class="btnflip-item  btnflip__front">Подробнее</span>
+                          <span class="btnflip-item  btnflip__center"></span>
+                          <span class="btnflip-item  btnflip__back">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="hockey-quiz">
+      <div class="hockey-quiz__wrapper">
+        <div class="hockey-quiz__inner">
+          <h2 class="hockey-quiz__title">Нужна помощь<br>в выборе экипировки?</h2>
+          <div class="hockey-quiz__container">
+            <span class="hockey-quiz__text">Ответьте на 4 простых вопроса и подберите наилучший вариант</span>
+            <div class="hockey-quiz__btns-field">
+              <div class="hockey-quiz__choose-btn-field">
+                <button class="hockey-quiz__choose-btn  hockey-quiz__choose-btn--shield  btnflip">
+                  <span class="btnflip-item  btnflip__front">Подобрать защиту</span>
+                  <span class="btnflip-item  btnflip__center"></span>
+                  <span class="btnflip-item  btnflip__back">Подобрать защиту</span>
+                </button>
+              </div>
+              <div class="hockey-quiz__choose-btn-field">
+                <button class="hockey-quiz__choose-btn  hockey-quiz__choose-btn--klushka  btnflip">
+                  <span class="btnflip-item  btnflip__front">Подобрать клюшки</span>
+                  <span class="btnflip-item  btnflip__center"></span>
+                  <span class="btnflip-item  btnflip__back">Подобрать клюшки</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="utp">
+      <div class="utp__wrapper">
+        <h2 class="utp__title">Работать с нами просто!</h2>
+        <ul class="utp__list">
+          <li class="utp__item">
+            <h3 class="utp__item-title">Выгодно</h3>
+            <span class="utp__item-subtitle">Минимальный заказ - всего 15 мячей</span>
+          </li>
+          <li class="utp__item">
+            <h3 class="utp__item-title">Удобно</h3>
+            <span class="utp__item-subtitle">Отправляем заказы по всей России</span>
+          </li>
+          <li class="utp__item">
+            <h3 class="utp__item-title">Продуманно</h3>
+            <span class="utp__item-subtitle">К каждому мячу прилагаем инструкцию по уходу</span>
+          </li>
+          <li class="utp__item">
+            <h3 class="utp__item-title">Всё в одном месте</h3>
+            <span class="utp__item-subtitle">Предоставим тренировочный инвентарь. Вам не нужно искать его в </span>
+          </li>
+          <li class="utp__item">
+            <h3 class="utp__item-title">Даём гарантии</h3>
+            <span class="utp__item-subtitle">Гарантия по договору. При гарантийном случае осуществим обмен </span>
+          </li>
+          <li class="utp__item">
+            <h3 class="utp__item-title">Работаем оперативно</h3>
+            <span class="utp__item-subtitle">Вышлем уже на следующий день после заказа</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="start">
+      <div class="start__wrapper">
+        <div class="start__container">
+          <h2 class="start__title">Начать работу</h2>
+          <span class="start__text">Оставьте заявку, мы подберем для вас оптимальный вариант. </span>
+          <form class="start__form">
+            <input type="text" class="start__input" placeholder="Имя">
+            <input type="tel" class="start__input" placeholder="Телефон">
+            <div class="start__submit-field">
+              <button type="submit" class="start__submit">
+                <a class="start__submit-btn  btnflip">
+                  <span class="btnflip-item  btnflip__front">Отправить</span>
+                  <span class="btnflip-item  btnflip__center"></span>
+                  <span class="btnflip-item  btnflip__back">Отправить</span>
+                </a>
+              </button>
+              <input type="checkbox" class="start__confid-checkbox" id="start-confid-checkbox" checked required>
+              <label for="start-confid-checkbox" class="start__confid-label">Согласен с <a href="#"
+                  class="start__confid-link">политикой конфиденциальности</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="brands__wrapper">
+        <h2 class="brands__title  brands__title--hockey">Экипировку Sherwood используют многие звезды НХЛ</h2>
+        <ul class="brands__list  brands__list--hockey  owl-carousel  owl-theme">
+          <li class="brands__item">
+            <div class="brands__item-container  brands__item-container--star">
+              <img src="/assets/templates/omega-template/img/hockey__star--1.jpg" alt="Ротор"
+                class="brands__logo  brands__logo--hockey-star">
+              <span class="brands__name">Бобби Райан</span>
+              <span class="brands__city"></span>
+            </div>
+          </li>
+          <li class="brands__item">
+            <div class="brands__item-container  brands__item-container--star">
+              <img src="/assets/templates/omega-template/img/hockey__star--2.jpg" alt="Ротор"
+                class="brands__logo  brands__logo--hockey-star">
+              <span class="brands__name">Томаш Плеканец</span>
+              <span class="brands__city"></span>
+            </div>
+          </li>
+          <li class="brands__item">
+            <div class="brands__item-container  brands__item-container--star">
+              <img src="/assets/templates/omega-template/img/hockey__star--3.jpg" alt="Ротор"
+                class="brands__logo  brands__logo--hockey-star">
+              <span class="brands__name">Пол Штястны</span>
+              <span class="brands__city"></span>
+            </div>
+          </li>
+          <li class="brands__item">
+            <div class="brands__item-container  brands__item-container--star">
+              <img src="/assets/templates/omega-template/img/hockey__star--1.jpg" alt="Джуниор"
+                class="brands__logo  brands__logo--hockey-star">
+              <span class="brands__name">Бобби Райан</span>
+              <span class="brands__city"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="grateful">
+      <div class="grateful__wrapper">
+        <h3 class="grateful__title">Благодарственные письма</h3>
+        <ul class="grateful__list  owl-carousel  owl-theme">
+          <li class="grateful__item">
+            <div class="grateful__item-container">
+              <a data-fancybox="group" href="/assets/templates/omega-template/img/grateful/01.jpg"
+                class="grateful__item-item-link">
+                <img src="/assets/templates/omega-template/img/grateful/01--min.jpg" alt="благодарственное письмо"
+                  class="grateful__item-img">
+              </a>
+            </div>
+          </li>
+          <li class="grateful__item">
+            <div class="grateful__item-container">
+              <a data-fancybox="group" href="/assets/templates/omega-template/img/grateful/01.jpg"
+                class="grateful__item-item-link">
+                <img src="/assets/templates/omega-template/img/grateful/01--min.jpg" alt="благодарственное письмо"
+                  class="grateful__item-img">
+              </a>
+            </div>
+          </li>
+          <li class="grateful__item">
+            <div class="grateful__item-container">
+              <a data-fancybox="group" href="/assets/templates/omega-template/img/grateful/01.jpg"
+                class="grateful__item-item-link">
+                <img src="/assets/templates/omega-template/img/grateful/01--min.jpg" alt="благодарственное письмо"
+                  class="grateful__item-img">
+              </a>
+            </div>
+          </li>
+          <li class="grateful__item">
+            <div class="grateful__item-container">
+              <a data-fancybox="group" href="/assets/templates/omega-template/img/grateful/01.jpg"
+                class="grateful__item-item-link">
+                <img src="/assets/templates/omega-template/img/grateful/01--min.jpg" alt="благодарственное письмо"
+                  class="grateful__item-img">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__wrapper">
+        <h3 class="about__title">О нас</h3>
+        <div class="about__director-field">
+          <img src="/assets/templates/omega-template/img/about__director.png" alt="Директор Omega"
+            class="about__director-img">
+        </div>
+        <div class="about__text-field">
+          <h3 class="about__text-title">О нас</h3>
+          <p class="about__paragraph">На сегодняшний день ассортимент компании представлен более чем в 400 магазинах по
+            всему миру. Отдельно по России компания владеет более 60 магазинами. В Нижнем Новгороде расположено 7
+            концептуальных магазинов и 2 стоковых, так же компания владеет брендом Reebok, который в Нижнем представлен
+            4 магазинами (3 концепта и 1 сток).</p>
+          <p class="about__paragraph">Экономическая деятельность фирмы - это деятельность по производству товаров
+            спортивной и около спортивной ориентации, обеспечение воспроизводства товаров и потребностей потребителя в
+            них, развитие каналов сбыта товаров для удовлетворения этих потребностей, с целью получения прибыли.</p>
+          <button type="submit" class="about__submit  btnflip  callback-btn">
+            <span class="btnflip-item  btnflip__front">Связаться с нами</span>
+            <span class="btnflip-item  btnflip__center"></span>
+            <span class="btnflip-item  btnflip__back">Связаться с нами</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <h3 class="feedback__title">Отзывы</h3>
+        <ul class="feedback__list  owl-carousel  owl-theme">
+          <li class="feedback__item">
+            <div class="feedback__item-container">
+              <div class="feedback__author-field">
+                <div class="feedback__img-field">
+                  <img src="/assets/templates/omega-template/img/feedback/author--01.png" alt="Автор отзыва"
+                    class="feedback__img">
+                </div>
+                <cite class="feedback__author-name">Александр</cite>
+                <span class="feedback__author-address">г. Краснодар, ООО Фирма</span>
+              </div>
+              <blockquote class="feedback__author-quote">На сегодняшний день ассортимент компании представлен более чем
+                в 400 магазинах по всему миру. Отдельно по России компания владеет более 60 магазинами. В Нижнем
+                Новгороде расположено 7 концептуальных магазинов и 2 стоковых, так же компания владеет брендом Reebok,
+                который в Нижнем представлен 4 магазинами (3 концепта и 1 сток).</blockquote>
+            </div>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-container">
+              <div class="feedback__author-field">
+                <div class="feedback__img-field">
+                  <img src="/assets/templates/omega-template/img/feedback/author--01.png" alt="Автор отзыва"
+                    class="feedback__img">
+                </div>
+                <cite class="feedback__author-name">Александр</cite>
+                <span class="feedback__author-address">г. Краснодар, ООО Фирма</span>
+              </div>
+              <blockquote class="feedback__author-quote">На сегодняшний день ассортимент компании представлен более чем
+                в 400 магазинах по всему миру. Отдельно по России компания владеет более 60 магазинами. В Нижнем
+                Новгороде расположено 7 концептуальных магазинов и 2 стоковых, так же компания владеет брендом Reebok,
+                который в Нижнем представлен 4 магазинами (3 концепта и 1 сток).</blockquote>
+            </div>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-container">
+              <div class="feedback__author-field">
+                <div class="feedback__img-field">
+                  <img src="/assets/templates/omega-template/img/feedback/author--01.png" alt="Автор отзыва"
+                    class="feedback__img">
+                </div>
+                <cite class="feedback__author-name">Александр</cite>
+                <span class="feedback__author-address">г. Краснодар, ООО Фирма</span>
+              </div>
+              <blockquote class="feedback__author-quote">На сегодняшний день ассортимент компании представлен более чем
+                в 400 магазинах по всему миру. Отдельно по России компания владеет более 60 магазинами. В Нижнем
+                Новгороде расположено 7 концептуальных магазинов и 2 стоковых, так же компания владеет брендом Reebok,
+                который в Нижнем представлен 4 магазинами (3 концепта и 1 сток).</blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__field">
+          <h3 class="contacts__title">Контакты</h3>
+          <a href="tel:+79999999999" class="contacts__phone">+7 (918) 994-00-01</a>
+          <a href="mailto:example@ya.ru" class="contacts__mail">example@ya.ru</a>
+          <address class="contacts__address">г. Краснодар, ул. Шоссейная, 21</address>
+          <button type="submit" class="contacts__submit  btnflip  callback-btn">
+            <span class="btnflip-item  btnflip__front">Обратный звонок</span>
+            <span class="btnflip-item  btnflip__center"></span>
+            <span class="btnflip-item  btnflip__back">Обратный звонок</span>
+          </button>
+        </div>
+        <div class="contacts__map-field">
+          <!--<div class="contacts__map" id="ya-map"></div>-->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a href="#" class="page-footer__confid-link">Пользовательское соглашение</a>
+      <a class="page-footer__logo-link">
+        <img src="/assets/templates/omega-template/img/logo_footer.png" alt="Логотип Omega" class="page-footer__logo">
+      </a>
+      <span class="page-footer__copyright">Все права защищены</span>
+    </div>
+  </footer>
+  <div class="overlay  overlay--quiz" id="quiz-hockey-shield">
+    <section class="quiz">
+      <div class="quiz__wrapper">
+        <button class="quiz__close-btn"></button>
+        <h2 class="quiz__title visually-hidden">Квиз подобрать защиту</h3>
+          <article class="qstage  qstage--1">
+            <h3 class="qstage__title">1. Тип формы</h3>
+            <ul class="qstage__list  qstage__list--radio">
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage1radio" value="Вратарская" id="stage1-radio1">
+                <label for="stage1-radio1" class="qstage__label  qstage__label--1-1">Вратарская</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage1radio" value="Полевая" id="stage1-radio2">
+                <label for="stage1-radio2" class="qstage__label  qstage__label--1-2">Полевая</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage1radio" value="Обе" id="stage1-radio3">
+                <label for="stage1-radio3" class="qstage__label  qstage__label--1-3">Обе</label>
+              </li>
+            </ul>
+            <div class="qstage__nav-field">
+              <button class="qstage__nav  qstage__nav--prev  btnflip">
+                <span class="btnflip-item  btnflip__front">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> <span class="btnflip-item  btnflip__center">
+                </span>
+                <span class="btnflip-item  btnflip__back">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> </button> <button
+                    class="qstage__nav qstage__nav--next  btnflip">
+                    <span class="btnflip-item  btnflip__front">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+                    <span class="btnflip-item  btnflip__center"></span>
+                    <span class="btnflip-item  btnflip__back">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+              </button>
+            </div>
+          </article>
+          <article class="qstage  qstage--2">
+            <h3 class="qstage__title">2. Уровень защиты</h3>
+            <ul class="qstage__list  qstage__list--radio">
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage2radio" value="Профессиональная"
+                  id="stage2-radio1">
+                <label for="stage2-radio1" class="qstage__label  qstage__label--2-1">Профессиональная</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage2radio" value="Средняя" id="stage2-radio2">
+                <label for="stage2-radio2" class="qstage__label  qstage__label--2-2">Средняя</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage2radio" value="Любительская" id="stage2-radio3">
+                <label for="stage2-radio3" class="qstage__label  qstage__label--2-3">Любительская</label>
+              </li>
+            </ul>
+            <div class="qstage__nav-field">
+              <button class="qstage__nav  qstage__nav--prev  btnflip">
+                <span class="btnflip-item  btnflip__front">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> <span class="btnflip-item  btnflip__center">
+                </span>
+                <span class="btnflip-item  btnflip__back">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> </button> <button
+                    class="qstage__nav qstage__nav--next  btnflip">
+                    <span class="btnflip-item  btnflip__front">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+                    <span class="btnflip-item  btnflip__center"></span>
+                    <span class="btnflip-item  btnflip__back">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+              </button>
+            </div>
+          </article>
+          <article class="qstage  qstage--3">
+            <h3 class="qstage__title">3. Диапазон размеров</h3>
+            <ul class="qstage__list  qstage__list--radio">
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3radio" value="30-39" id="stage3-radio1">
+                <label for="stage3-radio1" class="qstage__label  qstage__label--3-1">30-39</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3radio" value="40-49" id="stage3-radio2">
+                <label for="stage3-radio2" class="qstage__label  qstage__label--3-2">40-49</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3radio" value="50-60" id="stage3-radio3">
+                <label for="stage3-radio3" class="qstage__label  qstage__label--3-3">50-60</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3radio" value="Другой" id="stage3-radio4">
+                <label for="stage3-radio4" class="qstage__label  qstage__label--3-4">Другой</label>
+              </li>
+            </ul>
+            <div class="qstage__nav-field">
+              <button class="qstage__nav  qstage__nav--prev  btnflip">
+                <span class="btnflip-item  btnflip__front">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> <span class="btnflip-item  btnflip__center">
+                </span>
+                <span class="btnflip-item  btnflip__back">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> </button> <button
+                    class="qstage__nav qstage__nav--next  btnflip">
+                    <span class="btnflip-item  btnflip__front">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+                    <span class="btnflip-item  btnflip__center"></span>
+                    <span class="btnflip-item  btnflip__back">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+              </button>
+            </div>
+          </article>
+          <article class="qsubmit">
+            <h3 class="qsubmit__title">4. Оставьте свои данные и мы подберем вам защиту</h3>
+            <form class="qsubmit__form" id="qsubmit-shield-form">
+              <div class="qsubmit__form-wrapper">
+                <input type="text" class="qsubmit__input  qsubmit__input--name" name="uname" placeholder="Имя">
+                <input type="tel" class="qsubmit__input  qsubmit__input--phone" name="uphone" required
+                  placeholder="Телефон">
+                <textarea class="qsubmit__input  qsubmit__input--answers  visually-hidden" name="uanswers"></textarea>
+                <button type="submit" class="qsubmit__submit  btnflip">
+                  <span class="btnflip-item  btnflip__front">Отправить</span>
+                  <span class="btnflip-item  btnflip__center"></span>
+                  <span class="btnflip-item  btnflip__back">Отправить</span>
+                </button>
+              </div>
+              <input type="checkbox" class="qsubmit__confid-checkbox" id="qsubmit-confid-checkbox" required checked>
+              <label for="qsubmit-confid-checkbox" class="qsubmit__confid-label">Согласен с <a href="#"
+                  class="qsubmit__confid-link">политикой конфиденциальности</a></label>
+            </form>
+          </article>
+          <article class="qsuccess">
+            <h3 class="qsuccess__title">Спасибо, ваши данные получены</h3>
+            <span class="qsuccess__description">В ближайшее время мы свяжемся с вами</span>
+          </article>
+      </div>
+    </section>
+  </div>
+  <div class="overlay  overlay--quiz" id="quiz-hockey-klushka">
+    <section class="quiz">
+      <div class="quiz__wrapper">
+        <button class="quiz__close-btn"></button>
+        <h2 class="quiz__title visually-hidden">Квиз подобрать клюшки</h3>
+          <article class="qstage  qstage--1">
+            <h3 class="qstage__title">1. Какие клюшки нужны</h3>
+            <ul class="qstage__list  qstage__list--radio">
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage1kradio" value="Юниорские или детские"
+                  id="stage1k-radio1">
+                <label for="stage1k-radio1" class="qstage__label  qstage__label--1-1">Юниорские или детские</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage1kradio" value="Подростковые" id="stage1k-radio2">
+                <label for="stage1k-radio2" class="qstage__label  qstage__label--1-2">Подростковые</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage1kradio" value="Взрослые" id="stage1k-radio3">
+                <label for="stage1k-radio3" class="qstage__label  qstage__label--1-3">Взрослые</label>
+              </li>
+            </ul>
+            <div class="qstage__nav-field">
+              <button class="qstage__nav  qstage__nav--prev  btnflip">
+                <span class="btnflip-item  btnflip__front">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> <span class="btnflip-item  btnflip__center">
+                </span>
+                <span class="btnflip-item  btnflip__back">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> </button> <button
+                    class="qstage__nav qstage__nav--next  btnflip">
+                    <span class="btnflip-item  btnflip__front">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+                    <span class="btnflip-item  btnflip__center"></span>
+                    <span class="btnflip-item  btnflip__back">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+              </button>
+            </div>
+          </article>
+          <article class="qstage  qstage--2">
+            <h3 class="qstage__title">2. Какая линейка необходима</h3>
+            <ul class="qstage__list  qstage__list--radio">
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage2kradio" value="Профессиональная"
+                  id="stage2k-radio1">
+                <label for="stage2k-radio1" class="qstage__label  qstage__label--2-1">Профессиональная</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage2kradio" value="Средняя" id="stage2k-radio2">
+                <label for="stage2k-radio2" class="qstage__label  qstage__label--2-2">Средняя</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage2kradio" value="Любительская" id="stage2k-radio3">
+                <label for="stage2k-radio3" class="qstage__label  qstage__label--2-3">Любительская</label>
+              </li>
+            </ul>
+            <div class="qstage__nav-field">
+              <button class="qstage__nav  qstage__nav--prev  btnflip">
+                <span class="btnflip-item  btnflip__front">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> <span class="btnflip-item  btnflip__center">
+                </span>
+                <span class="btnflip-item  btnflip__back">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> </button> <button
+                    class="qstage__nav qstage__nav--next  btnflip">
+                    <span class="btnflip-item  btnflip__front">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+                    <span class="btnflip-item  btnflip__center"></span>
+                    <span class="btnflip-item  btnflip__back">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+              </button>
+            </div>
+          </article>
+          <article class="qstage  qstage--3">
+            <h3 class="qstage__title">3. Жесткость клюшки</h3>
+            <ul class="qstage__list  qstage__list--radio">
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3kradio"
+                  value="Whip (мягкая, примерно 65-75 по шкале Easton)" id="stage3k-radio1">
+                <label for="stage3k-radio1" class="qstage__label  qstage__label--3-1">Whip (мягкая, примерно 65-75 по
+                  шкале Easton)</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3kradio" value="Regular (обычная, 75-85)"
+                  id="stage3k-radio2">
+                <label for="stage3k-radio2" class="qstage__label  qstage__label--3-2">Regular (обычная, 75-85)</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3kradio" value="Stiff (жесткая, 85-100)"
+                  id="stage3k-radio3">
+                <label for="stage3k-radio3" class="qstage__label  qstage__label--3-3">Stiff (жесткая, 85-100)</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3kradio" value="X-stiff (особо-жесткая, 100-110)"
+                  id="stage3k-radio4">
+                <label for="stage3k-radio4" class="qstage__label  qstage__label--3-4">X-stiff (особо-жесткая,
+                  100-110)</label>
+              </li>
+              <li class="qstage__item  qstage__item--radio">
+                <input class="qstage__radio" type="radio" name="stage3kradio" value="Xx-stiff (экстра жесткая, 110-120)"
+                  id="stage3k-radio5">
+                <label for="stage3k-radio5" class="qstage__label  qstage__label--3-4">Xx-stiff (экстра жесткая,
+                  110-120)</label>
+              </li>
+            </ul>
+            <div class="qstage__nav-field">
+              <button class="qstage__nav  qstage__nav--prev  btnflip">
+                <span class="btnflip-item  btnflip__front">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> <span class="btnflip-item  btnflip__center">
+                </span>
+                <span class="btnflip-item  btnflip__back">
+                  <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Назад</span> </button> <button
+                    class="qstage__nav qstage__nav--next  btnflip">
+                    <span class="btnflip-item  btnflip__front">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+                    <span class="btnflip-item  btnflip__center"></span>
+                    <span class="btnflip-item  btnflip__back">Далее&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></span>
+              </button>
+            </div>
+          </article>
+          <article class="qsubmit">
+            <h3 class="qsubmit__title">4. Оставьте свои данные и мы подберем вам защиту</h3>
+            <form class="qsubmit__form" id="qsubmit-klushka-form">
+              <div class="qsubmit__form-wrapper">
+                <input type="text" class="qsubmit__input  qsubmit__input--name" name="uname" placeholder="Имя">
+                <input type="tel" class="qsubmit__input  qsubmit__input--phone" name="uphone" required
+                  placeholder="Телефон">
+                <textarea class="qsubmit__input  qsubmit__input--answers  visually-hidden" name="uanswers"></textarea>
+                <button type="submit" class="qsubmit__submit  btnflip">
+                  <span class="btnflip-item  btnflip__front">Отправить</span>
+                  <span class="btnflip-item  btnflip__center"></span>
+                  <span class="btnflip-item  btnflip__back">Отправить</span>
+                </button>
+              </div>
+              <input type="checkbox" class="qsubmit__confid-checkbox" id="qsubmitk-confid-checkbox" required checked>
+              <label for="qsubmitk-confid-checkbox" class="qsubmit__confid-label">Согласен с <a href="#"
+                  class="qsubmit__confid-link">политикой конфиденциальности</a></label>
+            </form>
+          </article>
+          <article class="qsuccess">
+            <h3 class="qsuccess__title">Спасибо, ваши данные получены</h3>
+            <span class="qsuccess__description">В ближайшее время мы свяжемся с вами</span>
+          </article>
+      </div>
+    </section>
+  </div>
+  <div class="popup-product-card">
+    <div class="popup-product-card__wrapper">
+      <div class="popup-product-card__slider">
+        <button class="popup-product-card__back-btn">Назад</button>
+        <ul class="popup-product-card__list  owl-carousel  owl-theme">
+          <li class="popup-product-card__item">
+            <div class="popup-product-card__item-wrapper">
+              <img src="/assets/templates/omega-template/img/catalog/balls/vamos/roraima/popup__roraima--01.png"
+                alt="Vamos" class="popup-product-card__item-img">
+            </div>
+          </li>
+          <li class="popup-product-card__item">
+            <div class="popup-product-card__item-wrapper">
+              <img src="/assets/templates/omega-template/img/catalog/balls/vamos/roraima/popup__roraima--01.png"
+                alt="Vamos" class="popup-product-card__item-img">
+            </div>
+          </li>
+          <li class="popup-product-card__item">
+            <div class="popup-product-card__item-wrapper">
+              <img src="/assets/templates/omega-template/img/catalog/balls/vamos/roraima/popup__roraima--01.png"
+                alt="Vamos" class="popup-product-card__item-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="popup-product-card__description-field">
+        <div class="popup-product-card__for-field">
+          <span class="popup-product-card__for-bordered">Training</span>
+          <span class="popup-product-card__for">Для ежедневных тренировок</span>
+        </div>
+        <span class="popup-product-card__type">Футбольный мяч</span>
+        <span class="popup-product-card__name">Roraima</span>
+        <div class="popup-product-card__get-price-field">
+          <a class="popup-product-card__get-price-btn  btnflip">
+            <span class="btnflip-item  btnflip__front">Узнать цену</span>
+            <span class="btnflip-item  btnflip__center"></span>
+            <span class="btnflip-item  btnflip__back">Узнать цену</span>
+          </a>
+        </div>
+        <div class="popup-product-card__description">
+          <nav class="popup-product-card__nav">
+            <ul class="popup-product-card__nav-list">
+              <li class="popup-product-card__nav-item  popup-product-card__nav-item--active">Характеристики</li>
+              <li class="popup-product-card__nav-item">Описание</li>
+              <li class="popup-product-card__nav-item">Доставка и оплата</li>
+            </ul>
+          </nav>
+          <ul class="popup-product-card__char-list">
+            <li class="popup-product-card__char-item">
+              <table class="popup-product-card__char-table">
+                <tr class="popup-product-card__char-tr">
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--name">Размер</td>
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--value">5</td>
+                </tr>
+                <tr class="popup-product-card__char-tr">
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--name">Окружность</td>
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--value">68,5 - 69,5 см</td>
+                </tr>
+                <tr class="popup-product-card__char-tr">
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--name">Вес</td>
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--value">420-455 грамм</td>
+                </tr>
+                <tr class="popup-product-card__char-tr">
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--name">Панели</td>
+                  <td class="popup-product-card__char-td  popup-product-card__char-td--value">32 штуки</td>
+                </tr>
+              </table>
+            </li>
+            <li class="popup-product-card__char-item"></li>
+            <li class="popup-product-card__char-item"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay  overlay--callback" id="popup-callback">
+    <article class="popup-callback">
+      <div class="popup-callback__wrapper">
+        <button class="popup-callback__close-btn"></button>
+        <h3 class="popup-callback__title">Оставьте свои данные и мы подберем вам мяч</h3>
+        <form class="popup-callback__form" id="popup-callback-form">
+          <div class="popup-callback__form-wrapper">
+            <input type="text" class="popup-callback__input  popup-callback__input--name" name="uname"
+              placeholder="Имя">
+            <input type="tel" class="popup-callback__input  popup-callback__input--phone" name="uphone" required
+              placeholder="Телефон">
+            <input type="text" class="popup-callback__input  popup-callback__input--page  visually-hidden" name="upage"
+              value="страница хоккея">
+            <button type="submit" class="popup-callback__submit  btnflip">
+              <span class="btnflip-item  btnflip__front">Отправить</span>
+              <span class="btnflip-item  btnflip__center"></span>
+              <span class="btnflip-item  btnflip__back">Отправить</span>
+            </button>
+          </div>
+          <input type="checkbox" class="qsubmit__confid-checkbox" id="qsubmit-confid-checkbox" required checked>
+          <label for="qsubmit-confid-checkbox" class="qsubmit__confid-label">Согласен с <a href="#"
+              class="qsubmit__confid-link">политикой конфиденциальности</a></label>
+        </form>
+      </div>
+    </article>
+  </div>
+  <div class="overlay  overlay--success" id="popup-success">
+    <article class="popup-success">
+      <div class="popup-success__wrapper">
+        <button class="popup-success__close-btn"></button>
+        <h3 class="popup-success__title">Спасибо, ваши данные получены</h3>
+        <span class="popup-success__description">В ближайшее время мы свяжемся с вами</span>
+      </div>
+    </article>
+  </div>
+  <script src="/assets/templates/omega-template/js/main.js"></script>
+  <script src="/assets/templates/omega-template/js/hockey.js"></script>
+  <script src="/assets/templates/omega-template/js/picturefill.min.js"></script>
+</body>
+
+</html>

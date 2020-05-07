@@ -1,0 +1,180 @@
+.combat-intro {
+  @media #{$max-mobile-width} {
+    padding-bottom: 249px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 144px;
+    padding-bottom: 128px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 271px;
+  }
+}
+.combat-intro__wrapper {
+  @include section-width--no-mobile;
+  @include paddings;
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 61px;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    @media #{$max-mobile-width} {
+      width: 260px;
+      height: 358px;
+      background-image: url("/assets/templates/omega-template/img/ball-dots--mobile.png");
+      right: -165px;
+      top: 45px;
+    }
+    @media #{$min-tablet-width} {
+      width: 331px;
+      height: 455px;
+      background-image: url("/assets/templates/omega-template/img/ball-dots--tablet.png");
+      right: -160px;
+      top: 5px;
+    }
+    @media #{$min-desktop-width} {
+      top: -89px;
+      right: -80px;
+    }
+  }
+}
+.combat-intro__text-field {
+  @media #{$min-tablet-width} {
+    padding-right: 60px;
+  }
+}
+.combat-intro__title {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $title-color;
+  margin-top: 0;
+  @media #{$max-mobile-width} {
+    font-size: 3rem;
+    max-width: 300px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 3.4rem;
+    max-width: 506px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 4.2rem;
+  }
+}
+.combat-intro__title--combat {
+  @media #{$max-mobile-width} {
+    max-width: 350px;
+  }
+}
+.combat-intro__description {
+  display: block;
+  @media #{$max-mobile-width} {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 28px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    max-width: 570px;
+    margin-top: 29px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-top: 36px;
+  }
+}
+.combat-intro__order-btn-field {
+  position: relative;
+  height: 50px;
+  width: 207px;
+  @media #{$max-mobile-width} {
+    margin-top: 93px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 125px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 66px;
+  }
+}
+.combat-intro__order-btn {
+  background-color: transparent;
+}
+.combat-intro__helm-field {
+  position: relative;
+  z-index: 3;
+  @media #{$max-mobile-width} {
+    width: 189px;
+    height: 229px;
+    margin-top: 110px;
+    @include centers;
+    transform: translateX(-30px);
+  }
+  @media #{$min-tablet-width} {
+    width: 230px;
+    height: 278px;
+    flex-shrink: 0;
+    transform: translate(-105px, -43px);
+  }
+  @media #{$min-desktop-width} {
+    width: 245px;
+    height: 296px;
+    transform: translate(-278px, -130px);
+  }
+}
+.combat-intro__helm {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  @media #{$max-mobile-width} {
+    background-image: url("/assets/templates/omega-template/img/combat__helm--mobile.png");
+  }
+  @media #{$min-tablet-width} {
+    background-image: url("/assets/templates/omega-template/img/combat__helm--tablet.png");
+  }
+  @media #{$min-desktop-width} {
+    background-image: url("/assets/templates/omega-template/img/combat__helm--desktop.png");
+  }
+}
+.combat-intro__gloves {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media #{$max-mobile-width} {
+    left: 45px;
+    top: 187px;
+    width: 228px;
+    height: 193px;
+    background-image: url("/assets/templates/omega-template/img/combat__gloves--mobile.png");
+  }
+  @media #{$min-tablet-width} {
+    left: 62px;
+    top: 224px;
+    width: 277px;
+    height: 235px;
+    background-image: url("/assets/templates/omega-template/img/combat__gloves--tablet.png");
+  }
+  @media #{$min-desktop-width} {
+    left: 125px;
+    top: 165px;
+    width: 324px;
+    height: 274px;
+    background-image: url("/assets/templates/omega-template/img/combat__gloves--desktop.png");
+  }
+}

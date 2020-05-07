@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]

@@ -1,0 +1,130 @@
+.qsubmit {
+  display: none;
+}
+.qsubmit__title {
+  color: #000;
+  max-width: 355px;
+  @include centers;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media #{$max-mobile-width} {
+    font-size: 1.5rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.5rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2.2rem;
+  }
+}
+.qsubmit__form {
+  max-width: 400px;
+  @include centers;
+  margin-top: 20px;
+}
+.qsubmit__form-wrapper {
+  max-width: 200px;
+  @include centers;
+}
+.qsubmit__input {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  height: 45px;
+  font-size: 1.4rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 22px;
+}
+.qsubmit__submit {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 29px;
+  @media #{$max-mobile-width} {
+    height: 45px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    height: 45px;
+  }
+  @media #{$min-desktop-width} {
+    height: 50px;
+  }
+  & .btnflip-item {
+    @media #{$max-mobile-width} {
+      line-height: 45px;
+    }
+    @media #{$min-tablet-width} {
+      line-height: 45px;
+    }
+    @media #{$min-desktop-width} {
+      line-height: 50px;
+    }
+  }
+  & span {
+    @media #{$max-mobile-width} {
+      font-size: 1.4rem;
+    }
+    @media #{$min-tablet-width} {
+      font-size: 1.4rem;
+    }
+    @media #{$min-desktop-width} {
+      font-size: 1.8rem;
+    }
+  }
+}
+.qsubmit__confid-checkbox {
+  display: none;
+}
+.qsubmit__confid-link {
+  text-decoration: underline;
+}
+.qsubmit__confid-label {
+  display: block;
+  max-width: 375px;
+  @include centers;
+  padding-left: 30px;
+  margin-top: 20px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 5px;
+    top: 50%;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #000;
+    @media #{$max-mobile-width} {
+      transform: translateY(-8px);
+    }
+    @media #{$min-tablet-width} {
+      transform: translateY(-8px);
+    }
+    @media #{$min-desktop-width} {
+      transform: translateY(-10px);
+    }
+  }
+  
+}
+#qsubmit-confid-checkbox:checked ~ .qsubmit__confid-label,
+#qsubmitk-confid-checkbox:checked ~ .qsubmit__confid-label {
+  &::after {
+    position: absolute;
+    content: "";
+    left: 9px;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    background-color: #000;
+    @media #{$max-mobile-width} {
+      transform: translateY(-4px);
+    }
+    @media #{$min-tablet-width} {
+      transform: translateY(-4px);
+    }
+    @media #{$min-desktop-width} {
+      transform: translateY(-6px);
+    }
+  }
+}

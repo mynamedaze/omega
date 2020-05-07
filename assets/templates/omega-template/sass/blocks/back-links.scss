@@ -1,0 +1,35 @@
+.back-links__title {
+  text-align: center;
+}
+.back-links__list {
+  padding-left: 0;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include centers;
+}
+.back-links__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+.back-links__link {
+  padding-top: 80px;
+  width: 110px;
+  display: block;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center 0;
+  text-decoration: underline;
+}
+.back-links__link--balls {
+  background-image: url("/assets/templates/omega-template/img/back-to-balls.png");
+}
+.back-links__link--hockey {
+  background-image: url("/assets/templates/omega-template/img/back-to-hockey.png");
+}
+.back-links__link--combat {
+  background-image: url("/assets/templates/omega-template/img/back-to-combat.png");
+}

@@ -1,0 +1,194 @@
+.page-header {
+  position: relative;
+  z-index: 4;
+}
+
+.page-header__wrapper {
+  @include section-width--no-mobile;
+  @include paddings;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media #{$max-mobile-width} {
+    padding-top: 7px;
+    padding-bottom: 13px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 27px;
+    padding-bottom: 15px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 27px;
+    padding-bottom: 15px;
+  }
+}
+.page-header__contact {
+  position: relative;
+  z-index: 2;
+  @media #{$min-desktop-width} {
+    width: 400px;
+  }
+}
+.page-header__phone {
+  @media #{$max-mobile-width} {
+    font-size: 0;
+    background-size: 26px 26px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/templates/omega-template/img/phone.svg');
+    display: block;
+  }
+  @media #{$only-tablet-width} {
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/templates/omega-template/img/phone.svg');
+    display: block;
+    background-size: 32px 32px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
+.page-header__address {
+  @media #{$max-tablet-width} {
+    display: none;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.4rem;
+    font-style: normal;
+    display: block;
+    margin-top: 7px;
+  }
+}
+.page-header__logo-link {
+  position: relative;
+  z-index: 2;
+  @media #{$max-mobile-width} {
+    width: 106px;
+    height: 41px;
+    transform: translateY(-7px);
+  }
+  @media #{$only-tablet-width} {
+    width: 172px;
+    height: 68px;
+    transform: translate(60px, -12px);
+  }
+  @media #{$min-desktop-width} {
+    width: 172px;
+    height: 68px;
+    transform: translateY(-11px);
+  }
+}
+.page-header__logo-link--hockey {
+  @media #{$max-mobile-width} {
+    width: 170px;
+    height: 13px;
+    transform: translateY(0);
+  }
+  @media #{$min-tablet-width} {
+    width: 227px;
+    height: 17px;
+    transform: translate(60px, 0px);
+  }
+  @media #{$min-desktop-width} {
+    width: 306px;
+    height: 23px;
+    transform: translate(10px, 0px);
+  }
+}
+.page-header__callback-wrapper {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-desktop-width} {
+    width: 400px;
+  }
+}
+.page-header__callback-field {
+  position: relative;
+  width: 210px;
+  height: 45px;
+  @media #{$min-desktop-width} {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+.page-header__callback-btn {
+  background-color: transparent;
+  &.btnflip {
+    font-size: 1.6rem;
+    width: 210px;
+    height: 45px;
+  }
+  & .btnflip-item {
+    text-transform: none;
+    line-height: 43px;
+  }
+  .btnflip-item.btnflip__front {
+    color: #000;
+    border: 1px solid #000;
+  }
+  .btnflip-item.btnflip__back {
+    color: #fff;
+    background-color: #000;
+    transform: rotateX(180deg) translateZ(20px);
+    border: 0 solid #000;
+  }
+  .btnflip-item.btnflip__center {
+    background: #fff;
+  }
+  .btnflip-item.btnflip__center::before {
+    background: #000;
+  }
+}
+.page-header__burger-field {
+  @media #{$max-mobile-width} {
+    position: relative;
+    z-index: 2;
+  }
+  @media #{$min-tablet-width} {
+    display: none;
+  }
+}
+/* nav */
+.page-header__nav {
+  @media #{$max-mobile-width} {
+    position: absolute;
+    left: -5000px;
+    top: 0;
+    width: 100%;
+    padding-top: 60px;
+    border-top: 1px solid #393939;
+    border-right: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+    transition: all 0.3s ease 0.3s;
+  }
+  @media #{$min-tablet-width} {
+    display: none;
+  }
+  &.active {
+    left: 0;
+  }
+}
+.page-header__nav-wrapper {
+  background-color: #fff;
+  padding-bottom: 35px;
+}
+.page-header__nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  line-height: 4.2rem;
+  padding-top: 26px;
+  padding-left: 76px;
+  width: 220px;
+  @include centers;
+}
+/* /nav */

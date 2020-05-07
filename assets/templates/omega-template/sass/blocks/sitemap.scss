@@ -1,0 +1,18 @@
+.sitemap__wrapper {
+  @include paddings;
+  @include section-width;
+  @media #{$max-mobile-width} {
+    padding-top: 60px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 120px;
+  }
+}
+.sitemap__list {
+  list-style-type: disc;
+}
+.sitemap__list li {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}

@@ -1,0 +1,63 @@
+.quiz {
+  display: flex;
+  align-items: center;
+  max-width: 611px;
+  height: 100%;
+  @include centers;
+  @media #{$max-mobile-width} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.quiz__wrapper {
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 25px 23px;
+  background-size: 50px 291px;
+  background-image: url("/assets/templates/omega-template/img/quiz-dots.png");
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+}
+.quiz__close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: 40px;
+    background-color: #000;
+    transform: translate(-0.5px, -20px) rotate(45deg);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: 40px;
+    background-color: #000;
+    transform: translate(-0.5px, -20px) rotate(-45deg);
+  }
+}

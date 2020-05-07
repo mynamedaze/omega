@@ -1,0 +1,283 @@
+.popup-product-card {
+  @include paddings;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  color: #000;
+}
+.popup-product-card__wrapper {
+  background-color: #f6f6fa;
+  position: relative;
+  @include centers;
+  @media #{$max-mobile-width} {
+    max-width: 500px;
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    padding-left: 30px;
+    padding-top: 73px;
+    padding-bottom: 55px;
+    padding-right: 71px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 1300px;
+    padding-bottom: 80px;
+    padding-top: 87px;
+    padding-left: 60px;
+    padding-right: 103px;
+  }
+}
+.popup-product-card__slider {
+  @media #{$min-tablet-width} {
+    width: 329px;
+    flex-shrink: 0;
+  }
+  @media #{$min-desktop-width} {
+    width: 611px;
+  }
+}
+.popup-product-card__back-btn {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  background-size: 27px 13px;
+  background-image: url("/assets/templates/omega-template/img/popup-back-arrow.svg");
+  padding-left: 45px;
+  background-color: transparent;
+  @media #{$max-mobile-width} {
+    left: 30px;
+    top: 40px;
+  }
+  @media #{$min-tablet-width} {
+    left: 30px;
+    top: 75px;
+  }
+  @media #{$min-desktop-width} {
+    left: 59px;
+    top: 85px;
+  }
+}
+.popup-product-card__list {
+  padding-left: 0;
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+    max-width: 235px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    max-width: 235px;
+    margin-top: 70px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 353px;
+    margin-top: 50px;
+    transform: translateX(77px);
+  }
+  & .div {
+    @include centers;
+    @media #{$max-mobile-width} {
+      max-width: 235px;
+    }
+    @media #{$min-tablet-width} {
+      max-width: 235px;
+    }
+    @media #{$min-desktop-width} {
+      max-width: 353px;
+    }
+  }
+}
+.popup-product-card__description-field {
+  @media #{$max-mobile-width} {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media #{$min-tablet-width} {
+    flex-grow: 1;
+  }
+}
+.popup-product-card__for-field {
+  display: none;
+}
+.popup-product-card__for-bordered {
+  border: 2px solid #000;
+  margin-right: 26px;
+  @media #{$max-mobile-width} {
+    display: inline-block;
+    padding: 8px 10px;
+  }
+  @media #{$min-tablet-width} {
+    padding: 8px 19px;
+  }
+}
+.popup-product-card__for {
+  @media #{$max-mobile-width} {
+    display: block;
+    margin-top: 13px;
+  }
+}
+.popup-product-card__type {
+  display: block;
+  @media #{$max-mobile-width} {
+    margin-top: 27px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 36px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 52px;
+  }
+}
+.popup-product-card__name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  @media #{$max-mobile-width} {
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 21px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 30px;
+  }
+}
+.popup-product-card__get-price-field {
+  position: relative;
+  display: block;
+  @media #{$max-mobile-width} {
+    width: 174px;
+    height: 45px;
+    margin-top: 20px;
+  }
+  @media #{$min-tablet-width} {
+    width: 174px;
+    height: 45px;
+    margin-top: 49px;
+  }
+  @media #{$min-desktop-width} {
+    width: 207px;
+    height: 50px;
+    margin-top: 70px;
+  }
+  & .btnflip-item {
+    font-size: 14px;
+    line-height: 45px;
+  }
+}
+.popup-product-card__get-price-btn {
+  background-color: transparent;
+}
+.popup-product-card__nav-list {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #898989;
+  padding-top: 12px;
+  @media #{$min-tablet-width} {
+    margin-top: 55px;
+  }
+}
+.popup-product-card__nav-item {
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 27px;
+}
+.popup-product-card__nav-item--active {
+  font-weight: 700;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+}
+.popup-product-card__char-list {
+  padding-left: 0;
+  margin-top: -13px;
+}
+.popup-product-card__char-item:not(:first-child) {
+  display: none;
+  padding-top: 10px;
+}
+.popup-product-card__char-table {
+  width: 100%;
+}
+.popup-product-card__char-td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.popup-product-card__char-td--name {
+  width: 130px;
+  font-weight: 700;
+}
+/* стилизуем элементы слайдера */
+.popup-product-card {
+  & .owl-dots {
+    transform: translateY(-27px);
+    position: relative;
+    z-index: 3;
+  }
+  & .owl-dots span {
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    width: 9px !important;
+    height: 9px !important;
+    margin: 5px 15px !important;
+  }
+  & .owl-dots .owl-dot.active span {
+    background-color: #000 !important;
+  }
+  & .owl-nav {
+    position: relative;
+    z-index: 4;
+    @media #{$max-mobile-width} {
+      margin-top: 20px !important;
+    }
+    @media #{$min-tablet-width} {
+      margin-top: 50px !important;
+    }
+    @media #{$min-desktop-width} {
+      margin-top: 72px !important;
+    }
+  }
+  & .owl-prev,
+  & .owl-next {
+    cursor: pointer;
+    font-size: 0 !important;
+    width: 35px;
+    height: 35px;
+    border-radius: 0 !important;
+    border: 1px solid #bababa;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 7px 12px !important;
+  }
+  & .owl-next {
+    background-image: url("/assets/templates/omega-template/img/popup-forward-arrow.svg") !important;
+    margin: 0 0 0 75px !important;
+  }
+  & .owl-prev {
+    background-image: url("/assets/templates/omega-template/img/popup-prev-arrow.svg") !important;
+    margin: 0 75px 0 0 !important;
+  }
+}
+
+/* /стилизуем элементы слайдера */

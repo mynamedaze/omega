@@ -1,0 +1,75 @@
+.product-brand__item {
+  @media #{$max-mobile-width} {
+    margin-top: 5px;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 21px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 69px;
+  }
+}
+.product-brand__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  @media #{$max-mobile-width} {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 2.2rem;
+    padding-right: 90px;
+    flex-shrink: 0;
+    margin-top: 0;
+  }
+}
+.product-brand__title--hockey {
+  text-transform: none;
+  @media #{$max-mobile-width} {
+    margin-top: 36px;
+    margin-bottom: 8px;
+  }
+  @media #{$min-tablet-width} {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    padding-right: 0;
+  }
+}
+.product-brand__title--combat {
+  text-transform: none;
+  @media #{$max-mobile-width} {
+    margin-top: 36px;
+    margin-bottom: 8px;
+  }
+  @media #{$min-tablet-width} {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+}
+.product-brand__description {
+  @media #{$min-tablet-width} {
+    width: 100px;
+    flex-grow: 1;
+  } 
+}
+.product-brand__paragraph {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  @media #{$max-mobile-width} {
+    margin-bottom: 22px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+}
+.product-brand__list {
+  padding-left: 0;
+}

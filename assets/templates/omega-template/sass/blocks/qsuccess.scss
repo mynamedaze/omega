@@ -1,0 +1,24 @@
+.qsuccess {
+  display: none;
+}
+.qsuccess__title {
+  color: #000;
+  text-align: center;
+  @include centers;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media #{$max-mobile-width} {
+    font-size: 1.5rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.5rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2.2rem;
+  }
+}
+.qsuccess__description {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}

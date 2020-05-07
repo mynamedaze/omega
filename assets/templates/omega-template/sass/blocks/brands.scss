@@ -1,0 +1,274 @@
+.brands__wrapper {
+  @include section-width;
+  @include paddings;
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 68px;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 78px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    @media #{$max-mobile-width} {
+      left: -227px;
+      top: 37px;
+      width: 306px;
+      height: 167px;
+      background-image: url("/assets/templates/omega-template/img/brands__dots--mobile.svg");
+    }
+    @media #{$min-tablet-width} {
+      left: 25px;
+      top: 0;
+      width: 455px;
+      height: 249px;
+      background-image: url("/assets/templates/omega-template/img/brands__dots--tablet.svg");
+    }
+    @media #{$min-desktop-width} {
+      left: -112px;
+      top: 40px;
+      width: 455px;
+      height: 331px;
+      background-image: url("/assets/templates/omega-template/img/brands__dots--desktop.svg");
+    }
+  }
+}
+.brands__title {
+  @include main-title;
+  position: relative;
+  z-index: 3;
+  @media #{$max-mobile-width} {
+    max-width: 302px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 63px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 3rem;
+    line-height: 4.4rem;
+    margin-top: 72px;
+    max-width: 367px;
+  }
+}
+.brands__title--hockey {
+  @media #{$max-mobile-width} {
+    max-width: 500px;
+  }
+}
+.brands__list {
+  padding-left: 0;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 0;
+  @media #{$max-mobile-width} {
+    margin-top: 36px;
+  }
+  @media #{$min-tablet-width} {
+    width: 380px;
+    flex-shrink: 0;
+  }
+  @media #{$min-desktop-width} {
+    width: 562px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 1px;
+    background-color: #898989;
+    @media #{$max-mobile-width} {
+      left: 50%;
+      top: -10px;
+      transform: translateX(-32px);
+    }
+    @media #{$min-tablet-width} {
+      right: 464px;
+      top: 113px;
+    }
+    @media #{$min-desktop-width} {
+      right: 678px;
+      top: 115px;
+    }
+  }
+  & .owl-nav {
+    position: absolute;
+    @media #{$max-mobile-width} {
+      left: 0;
+      top: -38px;
+      width: 100%;
+    }
+    @media #{$min-tablet-width} {
+      left: -200px;
+      top: 85px;
+      width: 170px;
+    }
+    @media #{$min-desktop-width} {
+      left: -232px;
+      top: 86px;
+    }
+  }
+  & .owl-prev,
+  & .owl-next {
+    width: 7px;
+    height: 12px;
+    border-radius: 0 !important;
+    font-size: 0 !important;
+    padding: 0 !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: center !important;
+    background-color: transparent !important;
+  }
+  & .owl-prev {
+    background-image: url("/assets/templates/omega-template/img/arrow-prev.svg") !important;
+    margin-right: 65px !important;
+  }
+  & .owl-next {
+    background-image: url("/assets/templates/omega-template/img/arrow-forward.svg") !important;
+    margin-left: 65px !important;
+  }
+}
+.brands__list--hockey {
+  @media #{$min-desktop-width} {
+    width: 618px;
+  }
+  & .brands__item-container {
+    @media #{$min-tablet-width} {
+      padding-top: 130px;
+    }
+    @media #{$min-desktop-width} {
+      padding-top: 180px;
+    }
+  }
+  & .brands__item-container--star {
+    @media #{$min-tablet-width} {
+      padding-top: 140px;
+    }
+    @media #{$min-desktop-width} {
+      padding-top: 190px;
+    }
+  }
+  &::before {
+    @media #{$min-desktop-width} {
+      right: 733px;
+      top: 115px;
+    }
+  }
+}
+.brands__item {
+  @media #{$max-mobile-width} {
+    width: 120px;
+  }
+}
+.brands__item-container {
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 145px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 160px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 180px;
+  }
+}
+.brands__logo {
+  position: absolute;
+  left: 50%;
+  top: 81px;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.brands__logo--active {
+  filter: grayscale(0);
+}
+.brands__logo--1 {
+  @media #{$max-mobile-width} {
+    width: 79px !important;
+    height: 99px;
+    transform: translate(-39px, -49px);
+  }
+  @media #{$min-tablet-width} {
+    width: 79px !important;
+    height: 99px;
+    transform: translate(-39px, -49px);
+  }
+  @media #{$min-desktop-width} {
+    width: 113px !important;
+    height: 142px;
+    transform: translate(-56px, -71px);
+  }
+}
+.brands__logo--2 {
+  @media #{$max-mobile-width} {
+    width: 64px !important;
+    height: 98px;
+    transform: translate(-32px, -49px);
+  }
+  @media #{$min-tablet-width} {
+    width: 64px !important;
+    height: 98px;
+    transform: translate(-32px, -49px);
+  }
+  @media #{$min-desktop-width} {
+    width: 91px !important;
+    height: 140px;
+    transform: translate(-45px, -70px);
+  }
+}
+.brands__logo--3 {
+  @media #{$max-mobile-width} {
+    width: 113px !important;
+    height: 113px;
+    transform: translate(-56px, -56px);
+  }
+  @media #{$min-tablet-width} {
+    width: 113px !important;
+    height: 113px;
+    transform: translate(-56px, -56px);
+  }
+  @media #{$min-desktop-width} {
+    width: 162px !important;
+    height: 162px;
+    transform: translate(-81px, -81px);
+  }
+}
+.brands__logo--hockey-star {
+  height: auto;
+  @media #{$max-mobile-width} {
+    width: 120px !important;
+    transform: translate(-60px, -56px);
+  }
+  @media #{$min-tablet-width} {
+    width: 120px !important;
+    transform: translate(-60px, -56px);
+  }
+  @media #{$min-desktop-width} {
+    width: 200px !important;
+    transform: translate(-100px, -56px);
+  }
+}
+.brands__name {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+.brands__city {
+  display: block;
+  text-align: center;
+  @media #{$min-tablet-width} {
+    margin-top: 3px;
+  }
+}

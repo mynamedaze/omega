@@ -1,0 +1,157 @@
+.product-card__list {
+  width: 100%;
+  padding-left: 0;
+  @media #{$min-tablet-width} {
+    margin-top: 11px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 20px;
+  }
+}
+.product-card__item {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+.product-card__item-wrapper {
+  background-color: $preview-card-bg;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+  @media #{$max-mobile-width} {
+    width: 226px;
+    height: 332px;
+    padding-top: 60px;
+    padding-bottom: 38px;
+  }
+  @media #{$min-tablet-width} {
+    width: 226px;
+    height: 332px;
+    padding-top: 60px;
+    padding-bottom: 38px;
+  }
+  @media #{$min-desktop-width} {
+    width: 295px;
+    height: 385px;
+    padding-top: 53px;
+    padding-bottom: 37px;
+  }
+  &::before {
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+    left: 0;
+    border: 2px solid #000;
+    color: #000;
+    box-sizing: border-box;
+    @media #{$max-mobile-width} {
+      padding-top: 9px;
+      height: 39px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media #{$min-tablet-width} {
+      padding-top: 9px;
+      height: 39px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media #{$min-desktop-width} {
+      padding-top: 7px;
+      height: 35px;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+  &:hover {
+    box-shadow: 1px 2px 21px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+}
+.product-card__item-wrapper--hit {
+  &::before {
+    content: "Хит продаж";
+  }
+}
+.product-card__item-wrapper--popular {
+  &::before {
+    content: "Популярный";
+  }
+}
+.product-card__item-wrapper--best {
+  &::before {
+    content: "Лучший выбор";
+  }
+}
+.product-card__item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 16px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 20px;
+  }
+}
+.product-card__item-title--hockey {
+  text-transform: none;
+}
+.product-card__img-field {
+  @media #{$max-mobile-width} {
+    width: 133px;
+    height: 133px;
+  }
+  @media #{$min-tablet-width} {
+    width: 133px;
+    height: 133px;
+  }
+  @media #{$min-desktop-width} {
+    width: 199px;
+    height: 199px;
+  }
+}
+.product-card__see-more-field {
+  position: relative;
+  @media #{$max-mobile-width} {
+    width: 158px;
+    height: 43px;
+  }
+  @media #{$min-tablet-width} {
+    width: 158px;
+    height: 45px;
+  }
+  @media #{$min-desktop-width} {
+    width: 207px;
+    height: 50px;
+  }
+  & .btnflip {
+    @media #{$max-mobile-width} {
+      font-size: 14px;
+    }
+    @media #{$min-tablet-width} {
+      font-size: 14px;
+    }
+    @media #{$min-desktop-width} {
+      font-size: 18px;
+    }
+  }
+  & .btnflip-item {
+    @media #{$max-mobile-width} {
+      line-height: 43px;
+    }
+    @media #{$min-tablet-width} {
+      line-height: 45px;
+    }
+    @media #{$min-desktop-width} {
+      line-height: 50px;
+    }
+  }
+}
+.product-card__see-more {
+  background-color: transparent;
+}

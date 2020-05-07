@@ -1,0 +1,171 @@
+.hockey-quiz {
+  position: relative;
+  @media #{$min-desktop-width} {
+    margin-top: 85px;
+    margin-bottom: 75px;
+  }
+}
+.hockey-quiz__wrapper {
+  position: relative;
+  z-index: 3;
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 65px;
+    padding-bottom: 25px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 114px;
+    padding-bottom: 100px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 70px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: 4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    @media #{$max-mobile-width} {
+      width: 321px;
+      height: 205px;
+      background-image: url("/assets/templates/omega-template/img/all-quiz-dots--mobile.svg");
+      top: 30px;
+      left: 235px;
+    }
+    @media #{$min-tablet-width} {
+      width: 455px;
+      height: 290px;
+      background-image: url("/assets/templates/omega-template/img/all-quiz-dots--tablet.svg");
+      top: 40px;
+      left: 400px;
+    }
+    @media #{$min-desktop-width} {
+      height: 331px;
+      background-image: url("/assets/templates/omega-template/img/all-quiz-dots--desktop.svg");
+      top: 5px;
+      left: 300px;
+    }
+  }
+  &::before {
+    @media #{$min-desktop-width} {
+      position: absolute;
+      content: "";
+      left: 1030px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f6f6fa;
+    }
+  }
+}
+.hockey-quiz__inner {
+  position: relative;
+  z-index: 5;
+  &::before {
+    @media #{$min-desktop-width} {
+      position: absolute;
+      content: "";
+      left: 945px;
+      top: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("/assets/templates/omega-template/img/grand-arrow.png");
+      width: 179px;
+      height: 12px;
+      transform: translateY(-6px);
+    }
+  }
+}
+.hockey-quiz__title {
+  @include main-title;
+}
+.hockey-quiz__container {
+  @media #{$min-tablet-width} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 709px;
+  }
+}
+.hockey-quiz__text {
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 239px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    width: 305px;
+  }
+}
+.hockey-quiz__btns-field {
+  @media #{$max-mobile-width} {
+    margin-top: 40px;
+  }
+  @media #{$only-tablet-width} {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  @media #{$min-desktop-width} {
+    position: absolute;
+    left: 512px;
+    top: 40px;
+  }
+}
+.hockey-quiz__choose-btn-field {
+  position: relative;
+  @media #{$max-mobile-width} {
+    width: 221px;
+    height: 45px;
+    margin-bottom: 26px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    width: 221px;
+    height: 45px;
+    margin-bottom: 41px;
+  }
+  @media #{$min-desktop-width} {
+    width: 268px;
+    height: 50px;
+    margin-bottom: 45px;
+  }
+  & .btnflip {
+    @media #{$max-mobile-width} {
+      font-size: 14px;
+    }
+    @media #{$min-tablet-width} {
+      font-size: 14px;
+    }
+    @media #{$min-desktop-width} {
+      font-size: 18px;
+    }
+  }
+  & .btnflip-item {
+    @media #{$max-mobile-width} {
+      line-height: 45px;
+    }
+    @media #{$min-tablet-width} {
+      line-height: 45px;
+    }
+    @media #{$min-desktop-width} {
+      line-height: 50px;
+    }
+  }
+}
+.hockey-quiz__choose-btn {
+  background-color: transparent;
+}

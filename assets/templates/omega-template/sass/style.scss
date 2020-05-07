@@ -1,0 +1,51 @@
+@import "normalize.scss";
+
+@import "global/fonts.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+@import "owl.carousel/owl.carousel.scss";
+@import "owl.carousel/owl.theme.default.scss";
+
+@import "blocks/confid.scss";
+@import "blocks/e40x.scss";
+@import "blocks/sitemap.scss";
+
+@import "blocks/back-links.scss";
+
+@import "blocks/overlay.scss";
+@import "blocks/popup-callback.scss";
+@import "blocks/popup-success.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/ball-layers.scss";
+@import "blocks/catalogue.scss";
+@import "blocks/product-type.scss";
+@import "blocks/product-brand.scss";
+@import "blocks/product-card.scss";
+@import "blocks/popup-product-card.scss";
+@import "blocks/popup-card-submit.scss";
+@import "blocks/ball-quiz.scss";
+@import "blocks/utp.scss";
+@import "blocks/start.scss";
+@import "blocks/brands.scss";
+@import "blocks/grateful.scss";
+@import "blocks/about.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/hockey-intro.scss";
+@import "blocks/hockey-quiz.scss";
+
+@import "blocks/combat-intro.scss";
+@import "blocks/combat-quiz.scss";
+@import "blocks/federations.scss";
+
+@import "blocks/quiz.scss";
+
+@import "blocks/qstage.scss";
+@import "blocks/qsubmit.scss";
+@import "blocks/qsuccess.scss";
